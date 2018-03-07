@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><Policy Description="R2V0cyBCaXRsb2NrZXIgU3RhdHVzIGFuZCByZWNvdmVyeSBLZXkgZm9yIHRoZSBPUyBkcml2ZQ==" ExecutionType="Local" ID="60333e17-be6f-4ae6-97f4-6cbb0be24163" Name="Bitlocker Status" PS3ObjectCount="0" RemoteCategory="0" Version="2.2.0.116">
+  <Object Data="&lt;xml&gt;&lt;OutputParameters&gt;&lt;Parameter ParameterName=&quot;strCypher&quot; Label=&quot;Encryption Method&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.strCypher&quot; /&gt;&lt;Parameter ParameterName=&quot;intPctEncrypt&quot; Label=&quot;Percent Encrypted&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.intPctEncrupt&quot; /&gt;&lt;Parameter ParameterName=&quot;strBitlockerStatus&quot; Label=&quot;Bitlocker Status&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.strBitlockerStatus&quot; /&gt;&lt;Parameter ParameterName=&quot;strRecoveryOptions&quot; Label=&quot;Recovery Options&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.strRecoveryOptions&quot; /&gt;&lt;Parameter ParameterName=&quot;strRecoveryPassword&quot; Label=&quot;Recovery Key&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.strRecoveryPassword&quot; /&gt;&lt;/OutputParameters&gt;&lt;/xml&gt;" ID="{c7c03b31-b956-48aa-a981-e5ebb8661581}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}"/>
+  <LinkManager xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b8205ece-3a7d-4563-9e29-0b1618e62880.strCypher</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3/>
+        <d2p1:m_Item4>strCypher</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b8205ece-3a7d-4563-9e29-0b1618e62880.intPctEncrypt</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3/>
+        <d2p1:m_Item4>intPctEncrypt</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b8205ece-3a7d-4563-9e29-0b1618e62880.strBitlockerStatus</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3/>
+        <d2p1:m_Item4>strBitlockerStatus</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b8205ece-3a7d-4563-9e29-0b1618e62880.strRecoveryOptions</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3/>
+        <d2p1:m_Item4>strRecoveryOptions</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b8205ece-3a7d-4563-9e29-0b1618e62880.strRecoveryPassword</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3/>
+        <d2p1:m_Item4>strRecoveryPassword</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" mc:Ignorable="sap sads" x:Class="Policy Builder">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)"/>
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>490,571</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" sap:VirtualizedContainerService.HintSize="490,571">
+      <p:PolicySequence.Activities>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.2.0.116, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" Moniker="b8205ece-3a7d-4563-9e29-0b1618e62880" OutPut_64="[RunPowerShellScript_OutPut_64]" Result="[RunPowerShellScript_Result]" ResultString="[RunPowerShellScript_ResultString]" Results_x64="[RunPowerShellScript_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="62e19753-dc6a-4583-b552-d2070c1ae571" m_bTextLinkChange="False" sap:VirtualizedContainerService.HintSize="454,348" script="DQAKACQAVgBvAGwAdQBtAGUAIAA9ACAARwBlAHQALQBCAGkAdABMAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQAgAEMAOgANAAoAWwBzAHQAcgBpAG4AZwBdACQAQwB5AHAAaABlAHIAIAA9ACAAJABWAG8AbAB1AG0AZQAuAEUAbgBjAHIAeQBwAHQAaQBvAG4ATQBlAHQAaABvAGQADQAKAFsAaQBuAHQAXQAkAHAAYwB0AEUAbgBjAHIAeQBwAHQAIAA9ACAAJABWAG8AbAB1AG0AZQAuAEUAbgBjAHIAeQBwAHQAaQBvAG4AUABlAHIAYwBlAG4AdABhAGcAZQANAAoAWwBzAHQAcgBpAG4AZwBdACQAUAByAG8AdABlAGMAdABpAG8AbgBTAHQAYQB0AHUAcwAgAD0AIAAkAFYAbwBsAHUAbQBlAC4AUAByAG8AdABlAGMAdABpAG8AbgBTAHQAYQB0AHUAcwANAAoADQAKACQAUAByAG8AdABlAGMAdABvAHIAcwAgAD0AIAAkAFYAbwBsAHUAbQBlAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKACQAUAByAG8AdABlAGMAdABvAHIAQwBvAHUAbgB0ACAAPQAgACQAUAByAG8AdABlAGMAdABvAHIAcwAuAEMAbwB1AG4AdAANAAoADQAKACQAUgBlAGMAbwB2AGUAcgB5AFAAcgBvAHQAZQBjAHQAbwByACAAPQAgACQAUAByAG8AdABlAGMAdABvAHIAcwAgAHwAIAA/ACAAewAkAF8ALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgBUAHkAcABlACAALQBsAGkAawBlACAAIgBSAGUAYwBvAHYAZQByAHkAUABhAHMAcwB3AG8AcgBkACIAfQANAAoAWwBzAHQAcgBpAG4AZwBdACQAUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZAAgAD0AIAAkAFIAZQBjAG8AdgBlAHIAeQBQAHIAbwB0AGUAYwB0AG8AcgAuAFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAHcAbwByAGQADQAKAFsAcwB0AHIAaQBuAGcAXQAkAFIAZQBjAG8AdgBlAHIAeQBPAHAAdABpAG8AbgBzACAAPQAgACQAUAByAG8AdABlAGMAdABvAHIAcwAuAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAFQAeQBwAGUADQAKAA0ACgAgACQAcwB0AHIAQwB5AHAAaABlAHIAIAA9ACAAJABDAHkAcABoAGUAcgA7AA0ACgAgACQAaQBuAHQAUABjAHQARQBuAGMAcgB5AHAAdAAgAD0AIAAkAHAAYwB0AEUAbgBjAHIAeQBwAHQAOwANAAoAIAAkAHMAdAByAEIAaQB0AGwAbwBjAGsAZQByAFMAdABhAHQAdQBzACAAPQAgACQAUAByAG8AdABlAGMAdABpAG8AbgBTAHQAYQB0AHUAcwA7AA0ACgAgACQAcwB0AHIAUgBlAGMAbwB2AGUAcgB5AE8AcAB0AGkAbwBuAHMAIAA9ACAAJABSAGUAYwBvAHYAZQByAHkATwBwAHQAaQBvAG4AcwA7AA0ACgAgACQAcwB0AHIAUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZAAgAD0AIAAkAFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAHcAbwByAGQAOwANAAoA">
+          <p:RunPowerShellScript.InArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:InArg"/>
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <p:OutArg ArgType="string" DisplayName="strCypher" Name="strCypher" x:Key="strCypher">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_strCypher]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg ArgType="number" DisplayName="intPctEncrupt" Name="intPctEncrypt" x:Key="intPctEncrypt">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_intPctEncrypt]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg ArgType="string" DisplayName="strBitlockerStatus" Name="strBitlockerStatus" x:Key="strBitlockerStatus">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_strBitlockerStatus]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg ArgType="string" DisplayName="strRecoveryOptions" Name="strRecoveryOptions" x:Key="strRecoveryOptions">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_strRecoveryOptions]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg ArgType="string" DisplayName="strRecoveryPassword" Name="strRecoveryPassword" x:Key="strRecoveryPassword">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_strRecoveryPassword]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable Name="RunPowerShellScript_OutPut_64" x:TypeArguments="x:String"/>
+        <Variable Name="RunPowerShellScript_ResultString" x:TypeArguments="x:String"/>
+        <Variable Name="RunPowerShellScript_Results_x64" x:TypeArguments="scg:IEnumerable(x:Object)"/>
+        <Variable Name="RunPowerShellScript_Result" x:TypeArguments="x:Double"/>
+        <Variable Name="RunPowerShellScript_strCypher" x:TypeArguments="x:String"/>
+        <Variable Name="RunPowerShellScript_intPctEncrypt" x:TypeArguments="x:Double"/>
+        <Variable Name="RunPowerShellScript_strBitlockerStatus" x:TypeArguments="x:String"/>
+        <Variable Name="RunPowerShellScript_strRecoveryOptions" x:TypeArguments="x:String"/>
+        <Variable Name="RunPowerShellScript_strRecoveryPassword" x:TypeArguments="x:String"/>
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
